@@ -1,3 +1,4 @@
+import config.botconfig as config
 import discord
 from discord.ext import commands
 
@@ -12,4 +13,4 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send('Hello I am Bot!')
     
-bot.run('MTExMDQ4NTUxMjY4ODUwMDc1Nw.GyJCDV.5g6xsGTpXCpYdZdF1VldmCp7625ds4wxyLB2uQ')
+bot.run(config.getBotToken())
